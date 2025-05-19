@@ -462,7 +462,7 @@
             "sudo systemctl disable nvidia-resume.service"
           ]
         }
-      ] 
+      ]
     }
   ],
   "debian": [
@@ -483,23 +483,25 @@
           "special_values": [
             {
               "app_name": "VMware",
-              "version": "17.6.2"
+              "version": "17.6.3"
             }
           ],
           "install_script": [
             "mkdir -p $CACHE_PATH/$app_name",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.2/24409262/linux/core/VMware-Workstation-17.6.2-24409262.x86_64.bundle.tar -O $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.2/24409262/linux/packages/vmware-tools-windows-12.4.5-23787635.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-12.4.5-23787635.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.2/24409262/linux/packages/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar",
-            "tar -xf $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle.tar -C $CACHE_PATH/$app_name",
-            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-12.4.5-23787635.x86_64.component.tar -C $CACHE_PATH/$app_name",
-            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component.tar -C $CACHE_PATH/$app_name",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.6.3/24583834/linux/core/VMware-Workstation-17.6.3-24583834.x86_64.bundle.tar -O $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.6.3/24583834/linux/packages/vmware-tools-windows-12.5.0-24276846.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-12.5.0-24276846.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.6.3/24583834/linux/packages/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://packages-prod.broadcom.com/tools/frozen/windows/WindowsToolsVista/SP1/windows.iso -O $CACHE_PATH/$app_name/winVistaSP1.iso",
+            "wget -q https://packages-prod.broadcom.com/tools/frozen/windows/WindowsToolsVista/SP2/windows.iso -O $CACHE_PATH/$app_name/winVistaSP2.iso",
+            "tar -xf $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle.tar -C $CACHE_PATH/$app_name",
+            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-12.5.0-24276846.x86_64.component.tar -C $CACHE_PATH/$app_name",
+            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
@@ -507,9 +509,11 @@
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "sudo systemctl mask vmware.service",
-            "sudo chmod +x $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle",
-            "sudo $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle --console --required --eulas-agreed --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-12.4.5-23787635.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component",
-            "sudo systemctl unmask vmware.service"
+            "sudo chmod +x $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle",
+            "sudo $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle --console --required --eulas-agreed --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-12.5.0-24276846.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component",
+            "sudo cp $CACHE_PATH/$app_name/winVistaSP1.iso /usr/lib/vmware/isoimages/winVistaSP1.iso",
+            "sudo cp $CACHE_PATH/$app_name/winVistaSP2.iso /usr/lib/vmware/isoimages/winVistaSP2.iso",
+            "sudo systemctl unmask vmware.service "
           ],
           "check_script": ["/usr/bin/vmware-installer"],
           "remove_script": [
@@ -522,7 +526,7 @@
           "special_values": [
             {
               "app_name": "VMware",
-              "version": "17.6.2",
+              "version": "17.6.3",
               "dkms_name": "VMware-Host-Modules"
             }
           ],
@@ -820,23 +824,25 @@
           "special_values": [
             {
               "app_name": "VMware",
-              "version": "17.6.2"
+              "version": "17.6.3"
             }
           ],
           "install_script": [
             "mkdir -p $CACHE_PATH/$app_name",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.2/24409262/linux/core/VMware-Workstation-17.6.2-24409262.x86_64.bundle.tar -O $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.2/24409262/linux/packages/vmware-tools-windows-12.4.5-23787635.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-12.4.5-23787635.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.2/24409262/linux/packages/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar",
-            "tar -xf $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle.tar -C $CACHE_PATH/$app_name",
-            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-12.4.5-23787635.x86_64.component.tar -C $CACHE_PATH/$app_name",
-            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component.tar -C $CACHE_PATH/$app_name",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.6.3/24583834/linux/core/VMware-Workstation-17.6.3-24583834.x86_64.bundle.tar -O $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.6.3/24583834/linux/packages/vmware-tools-windows-12.5.0-24276846.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-12.5.0-24276846.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.6.3/24583834/linux/packages/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://packages-prod.broadcom.com/tools/frozen/windows/WindowsToolsVista/SP1/windows.iso -O $CACHE_PATH/$app_name/winVistaSP1.iso",
+            "wget -q https://packages-prod.broadcom.com/tools/frozen/windows/WindowsToolsVista/SP2/windows.iso -O $CACHE_PATH/$app_name/winVistaSP2.iso",
+            "tar -xf $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle.tar -C $CACHE_PATH/$app_name",
+            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-12.5.0-24276846.x86_64.component.tar -C $CACHE_PATH/$app_name",
+            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
@@ -844,9 +850,11 @@
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "sudo systemctl mask vmware.service",
-            "sudo chmod +x $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle",
-            "sudo $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle --console --required --eulas-agreed --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-12.4.5-23787635.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component",
-            "sudo systemctl unmask vmware.service"
+            "sudo chmod +x $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle",
+            "sudo $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle --console --required --eulas-agreed --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-12.5.0-24276846.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component",
+            "sudo cp $CACHE_PATH/$app_name/winVistaSP1.iso /usr/lib/vmware/isoimages/winVistaSP1.iso",
+            "sudo cp $CACHE_PATH/$app_name/winVistaSP2.iso /usr/lib/vmware/isoimages/winVistaSP2.iso",
+            "sudo systemctl unmask vmware.service "
           ],
           "check_script": ["/usr/bin/vmware-installer"],
           "remove_script": [
@@ -859,7 +867,7 @@
           "special_values": [
             {
               "app_name": "VMware",
-              "version": "17.6.2",
+              "version": "17.6.3",
               "dkms_name": "VMware-Host-Modules"
             }
           ],
@@ -973,7 +981,7 @@
           "type": "package",
           "install_value": "@virtualization",
           "check_value": "virt-manager qemu-common libvirt",
-          "remove_value":  "virt-manager qemu-common libvirt"
+          "remove_value": "virt-manager qemu-common libvirt"
         },
         {
           "name": "libvirtd.service for qemu",
@@ -1501,23 +1509,25 @@
           "special_values": [
             {
               "app_name": "VMware",
-              "version": "17.6.2"
+              "version": "17.6.3"
             }
           ],
           "install_script": [
             "mkdir -p $CACHE_PATH/$app_name",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.2/24409262/linux/core/VMware-Workstation-17.6.2-24409262.x86_64.bundle.tar -O $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.2/24409262/linux/packages/vmware-tools-windows-12.4.5-23787635.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-12.4.5-23787635.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.2/24409262/linux/packages/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar",
-            "wget -q https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar",
-            "tar -xf $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle.tar -C $CACHE_PATH/$app_name",
-            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-12.4.5-23787635.x86_64.component.tar -C $CACHE_PATH/$app_name",
-            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component.tar -C $CACHE_PATH/$app_name",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.6.3/24583834/linux/core/VMware-Workstation-17.6.3-24583834.x86_64.bundle.tar -O $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.6.3/24583834/linux/packages/vmware-tools-windows-12.5.0-24276846.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-12.5.0-24276846.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.6.3/24583834/linux/packages/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar -O $CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar",
+            "wget -q https://packages-prod.broadcom.com/tools/frozen/windows/WindowsToolsVista/SP1/windows.iso -O $CACHE_PATH/$app_name/winVistaSP1.iso",
+            "wget -q https://packages-prod.broadcom.com/tools/frozen/windows/WindowsToolsVista/SP2/windows.iso -O $CACHE_PATH/$app_name/winVistaSP2.iso",
+            "tar -xf $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle.tar -C $CACHE_PATH/$app_name",
+            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-12.5.0-24276846.x86_64.component.tar -C $CACHE_PATH/$app_name",
+            "tar -xf $CACHE_PATH/$app_name/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
@@ -1525,9 +1535,11 @@
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "tar -xf $CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component.tar -C $CACHE_PATH/$app_name",
             "sudo systemctl mask vmware.service",
-            "sudo chmod +x $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle",
-            "sudo $CACHE_PATH/$app_name/VMware-Workstation-17.6.2-24409262.x86_64.bundle --console --required --eulas-agreed --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-12.4.5-23787635.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-x86-12.4.5-23787635.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component",
-            "sudo systemctl unmask vmware.service"
+            "sudo chmod +x $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle",
+            "sudo $CACHE_PATH/$app_name/VMware-Workstation-17.6.3-24583834.x86_64.bundle --console --required --eulas-agreed --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-12.5.0-24276846.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-windows-x86-12.5.0-24276846.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPreVista-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linux-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-linuxPreGlibc25-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-netware-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-solaris-12.4.0-23259341.x86_64.component --install-component=$CACHE_PATH/$app_name/vmware-tools-winPre2k-12.4.0-23259341.x86_64.component",
+            "sudo cp $CACHE_PATH/$app_name/winVistaSP1.iso /usr/lib/vmware/isoimages/winVistaSP1.iso",
+            "sudo cp $CACHE_PATH/$app_name/winVistaSP2.iso /usr/lib/vmware/isoimages/winVistaSP2.iso",
+            "sudo systemctl unmask vmware.service "
           ],
           "check_script": ["/usr/bin/vmware-installer"],
           "remove_script": [
@@ -1540,7 +1552,7 @@
           "special_values": [
             {
               "app_name": "VMware",
-              "version": "17.6.2",
+              "version": "17.6.3",
               "dkms_name": "VMware-Host-Modules"
             }
           ],
